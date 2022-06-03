@@ -1,0 +1,71 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  color: #D897B8;
+}
+
+#p1 {
+  color: #ccfcef;
+}
+
+#p2 {
+  color: #F7673B;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+#sketchblock {
+  align: center;
+}
+
+body {
+  animation-name: backgroundColorPalette;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  /* linear is eed default, it’s not necessary to add it make it work but it can make your code more expressive */
+  text-align: center;
+  font-family: Lucida Console, Courier New, monospace;
+}
+
+@keyframes backgroundColorPalette {
+  0% {
+    background: #D897B8;
+  }
+  25% {
+    background: #F7673B;
+  }
+  50% {
+    background: #63E3D4;
+  }
+  75% {
+    background: #b4f8c8;
+  }
+  100% {
+    background: #ff9b85;
+  }
+}
+
+@keyframes effect {
+  0% {
+    background: linear-gradient(#ed909e, #86ef86);
+    -webkit-background-clip: text;
+  }
+  50% {
+    background: linear-gradient(#d690ed, #0fedd4);
+    -webkit-background-clip: text;
+  }
+
+  100% {
+    background: linear-gradient(#3CE7D7, #dd68f2);
+    -webkit-background-clip: text;
+  }
+}
